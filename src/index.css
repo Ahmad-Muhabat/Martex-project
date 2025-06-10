@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+body {
+  overflow-x: hidden;
+}
+main {
+  max-width: 100%;
+  margin-inline: auto;
+}
+.hero {
+  position:  relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50vw);
+  top: -30px;
+}
+.navv {
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50vw);
+}
+.crusel {
+  position:  relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50vw);
+}
+.gray {
+  position:  relative;
+  width: 100vw;
+  left: 30%;
+}
+
+@font-face {
+    font-family: "flaticon";
+    src: url("../fonts/flaticon.ttf?99008aa38e7de407db084b96baa4b2a2") format("truetype"),
+        url("../fonts/flaticon.woff?99008aa38e7de407db084b96baa4b2a2") format("woff"),
+        url("../fonts/flaticon.woff2?99008aa38e7de407db084b96baa4b2a2") format("woff2"),
+        url("../fonts/flaticon.eot?99008aa38e7de407db084b96baa4b2a2#iefix") format("embedded-opentype"),
+        url("../fonts/flaticon.svg?99008aa38e7de407db084b96baa4b2a2#flaticon") format("svg");
+}
+@keyframes infinite-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-infinite-scroll {
+  animation: infinite-scroll 10s linear infinite;
+}
+
+
+span[class^="flaticon-"]:before, span[class*=" flaticon-"]:before {
+  font-family: flaticon !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1!important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer utilities {
+  .flaticon-size-xs::before {
+    font-size: 12px !important;
+    margin: 0%;
+  }
+  .flaticon-size-sm::before {
+    font-size: 16px !important;
+    margin: 0%;
+  }
+  .flaticon-size-md::before {
+    font-size: 20px !important;
+    margin: 0%;
+  }
+  .flaticon-size-lg::before {
+    font-size: 28px !important;
+    margin: 0%;
+  }
+  .flaticon-size-xl::before {
+    font-size: 36px !important;
+    margin: 0%;
+  }
+  .flaticon-size-2xl::before {
+    font-size: 48px !important;
+    margin: 0%;
+  }
+}
+
+
